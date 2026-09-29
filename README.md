@@ -33,6 +33,14 @@ IF productNumber >= 1 AND productNumber <= 12 THEN
         DISPLAY "Total Price: P" + totalPrice
     ELSE
         DISPLAY "Error: Invalid Quantity!"
+
+
+
+
+
+
+
+        
     
 
 ELSE
