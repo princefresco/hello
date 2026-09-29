@@ -37,6 +37,5 @@ IF productNumber >= 1 AND productNumber <= 12 THEN
 
 ELSE
     DISPLAY "Error: Invalid Product Number!"
-End
 
 END
