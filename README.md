@@ -5,28 +5,19 @@ DECLARE productPrice[12] AS FLOAT
 DECLARE productNumber AS INTEGER
 DECLARE quantity AS INTEGER
 DECLARE totalPrice AS FLOAT
-DECLARE date AS STRING
-DISPLAY "=================================================="
-DISPLAY " FM GROCERY"
-DISPLAY "=================================================="
-DISPLAY "[PRODUCTS] DATE: " + date
-DISPLAY "----------------------CANNED------------------------"
-DISPLAY "[1] " + productName[1] + " - P" + productPrice[1]
-DISPLAY "[2] " + productName[2] + " - P" + productPrice[2]
-DISPLAY "[3] " + productName[3] + " - P" + productPrice[3]
-DISPLAY "---------------------PASTRIES-----------------------"
-DISPLAY "[4] " + productName[4] + " - P" + productPrice[4]
-DISPLAY "[5] " + productName[5] + " - P" + productPrice[5]
-DISPLAY "[6] " + productName[6] + " - P" + productPrice[6]
-DISPLAY "----------------------SNACKS------------------------"
-DISPLAY "[7] " + productName[7] + " - P" + productPrice[7]
-DISPLAY "[8] " + productName[8] + " - P" + productPrice[8]
-DISPLAY "[9] " + productName[9] + " - P" + productPrice[9]
-DISPLAY "---------------------ALCOHOL------------------------"
-DISPLAY "[10] " + productName[10] + " - P" + productPrice[10]
-DISPLAY "[11] " + productName[11] + " - P" + productPrice[11]
-DISPLAY "[12] " + productName[12] + " - P" + productPrice[12]
-DISPLAY "=================================================="
+DISPLAY "FM GROCERY"
+DISPLAY "[1] Corned Beef (150g) - P70.12"
+DISPLAY "[2] 555 Tuna (155g) - P45.23"
+DISPLAY "[3] Century Tuna (155) - P75.11"
+DISPLAY "[4] Gardenia Classic WB (600g) - P90.42"
+DISPLAY "[5] Gardenia High Fiber WB (400g) - P93.76"
+DISPLAY "[6] SariMonde Tasty Bread (450g) - P91.12"
+DISPLAY "[7] Nagaraya (160g) - P49.42"
+DISPLAY "[8] Potato Fries Ketchup (35g) - P65.59"
+DISPLAY "[9] Oishi Pillows Choco (38g) - P14.21"
+DISPLAY "[10] Alfonso Light (1L) - P290.42"
+DISPLAY "[11] Alfonso Platinum (1L) - P380.53"
+DISPLAY "[12] RedHorse (100ml) - P90.21"
 
 INPUT "Product Number: " TO productNumber
 
@@ -38,19 +29,14 @@ IF productNumber >= 1 AND productNumber <= 12 THEN
 
     IF quantity > 0 THEN
         SET totalPrice = productPrice[productNumber] * quantity
+        DISPLAY "Quantity: " + quantity
         DISPLAY "Total Price: P" + totalPrice
     ELSE
-        DISPLAY "Error: Invalid Quantity! Quantity must be greater than 0."
+        DISPLAY "Error: Invalid Quantity!"
+    
 
 ELSE
-    DISPLAY "Error: Invalid Product Number! Please choose from 1-12 only."
-END
-
-
-
-
-
-
-
+    DISPLAY "Error: Invalid Product Number!"
+End
 
 END
