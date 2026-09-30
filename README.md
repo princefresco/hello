@@ -5,6 +5,7 @@ DECLARE productPrice[12] AS FLOAT
 DECLARE productNumber AS INTEGER
 DECLARE quantity AS INTEGER
 DECLARE totalPrice AS FLOAT
+
 DISPLAY "FM GROCERY"
 DISPLAY "[1] Corned Beef (150g) - P70.12"
 DISPLAY "[2] 555 Tuna (155g) - P45.23"
