@@ -22,14 +22,14 @@ DISPLAY "[12] RedHorse (100ml) - P90.21"
 
 INPUT "Product Number: " TO productNumber
 
-IF productNumber >= 1 AND productNumber <= 12 THEN
+IF productNumber >= 1 AND productNumber <= 12 
     DISPLAY "You selected: " + productName[productNumber]
     DISPLAY "Price: P" + productPrice[productNumber]
 
     INPUT "Enter Quantity: " TO quantity
 
-    IF quantity > 0 THEN
-        SET totalPrice = productPrice[productNumber] * quantity
+    IF quantity > 0 
+         totalPrice = productPrice[productNumber] * quantity
         DISPLAY "Quantity: " + quantity
         DISPLAY "Total Price: P" + totalPrice
     ELSE
